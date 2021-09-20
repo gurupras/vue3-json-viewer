@@ -1,0 +1,38 @@
+{
+  "name": "@gurupras/vue3-json-viewer",
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "vite example/ --config vite.config.js",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "clipboard": "^2.0.8",
+    "mark.js": "^8.11.1",
+    "vue": "^3.2.6",
+    "vue-reactive-provide": "^0.3.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^1.6.1",
+    "@vue/compiler-sfc": "^3.2.6",
+    "eslint": "^7.32.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.0",
+    "eslint-plugin-vue": "^7.18.0",
+    "sass": "^1.41.1",
+    "vite": "^2.5.4"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/json-viewer.umd.js",
+  "module": "./dist/json-viewer.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/json-viewer.es.js",
+      "require": "./dist/json-viewer.umd.js"
+    }
+  }
+}
