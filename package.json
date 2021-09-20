@@ -33,6 +33,10 @@
     ".": {
       "import": "./dist/json-viewer.es.js",
       "require": "./dist/json-viewer.umd.js"
+    },
+    "./style.css": {
+      "import": "./dist/style.css",
+      "require": "./dist/style.css"
     }
   }
 }
